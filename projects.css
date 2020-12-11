@@ -1,0 +1,15 @@
+/* projects.css */
+body {
+ background-color: #ffffff;
+}
+h1 {
+ color: #919396;
+ text-align: left;
+ font: 20px Arial, sans-serif;
+}
+p {
+ background-color: #F7DE50;
+ color: #919396;
+ text-align: left;
+ border: 20px Arial, sans-serif;
+}
