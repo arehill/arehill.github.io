@@ -7,14 +7,11 @@
 <head>
   <link rel="icon" type="image/png" href="icon.png"/>
   <style>
-    div {
-        background-image: url("index-background.jpeg");
-    }
     body {
         font: 14px/26px Helvetica Neue, Helvetica, Arial, sans-serif;
         font-weight: 300;
-        background: #f7f7f7;
-        color: #000;
+        color: #000000;
+        background-color: #dce1e6;
     }
             
     h2 {
@@ -24,19 +21,30 @@
   </style>
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<body class="w3-white">
 
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
-<div class="w3-bar w3-border w3-light-grey">
-  <a href="index.html" class="w3-bar-item w3-button w3-hover-blue">Home</a>
-  <a href="personal.html" class="w3-bar-item w3-button w3-hover-blue">Projects</a>
-</div>
+<nav class="dd wrapper-dropdown-3 nav" tabindex="1">
+
+            <div class="menu-toggle">
+            <span class="menu-toggle-hamburger"></span>
+            </div>
+                
+            <ul class="dropdown" id="dropdown">
+
+                    
+                    <li>
+                        <a href="index.html" class="page">Home</a>
+                    </li>
+                    
+                
+                <li>
+                    <a href="personal.html">Projects</a>
+                </li>
+                
+            </ul>
+</nav>
 
   <!-- The Grid -->
   <div class="w3-row-padding">
