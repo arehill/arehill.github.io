@@ -6,24 +6,92 @@
 <meta charset="UTF-8">
 <head>
   <link rel="icon" type="image/png" href="icon.png"/>
-  <style>
-    body {
-        font: 14px/26px Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-weight: 300;
-        color: #000000;
-        background-color: #dce1e6;
-    }
+
+        <link rel="stylesheet" href="https://static.tumblr.com/wdg4six/oAvn4uggx/normalize.css">
+        <link rel="stylesheet" href="https://static.tumblr.com/wdg4six/QZzn5azvd/kznrmur-icons.css">
+        <link rel="stylesheet" href="https://static.tumblr.com/wdg4six/4aLn5z4sj/superstudio-main.css">
+        <link rel="stylesheet" href="https://static.tumblr.com/wofln30/FGGmyt1xp/colorbox.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <style>
             
-    h2 {
-         font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif, Helvetica Neue, Helvetica, Arial, sans-serif;
-         font-weight: bold;
-     }
-  </style>
+            body {
+                background-color: #f7f7f7;
+            }
+            
+            a {
+                color: #b0cce4;
+            }
+
+            .fa-github {
+              background: #000000;
+              color: white;
+            }
+
+            .fa-linkedin {
+              background: #2596be;
+              color: white;
+            }
+            
+            .header-container h1 a {
+                font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif, Helvetica Neue, Helvetica, Arial, sans-serif;
+                font-weight: bold;
+            }
+            
+            .menu-toggle .menu-toggle-hamburger {
+                border-color: #FFFFFF;
+            }
+            
+            .menu-toggle .menu-toggle-hamburger:before,
+            .menu-toggle .menu-toggle-hamburger:after {
+                background: #FFFFFF;
+            }
+            
+            .menu-toggle:hover,
+            .menu-toggle.on {
+                background: #FFFFFF;
+                color: #FFFFFF;
+            }
+            
+            .menu-toggle:hover .menu-toggle-hamburger,
+            .menu-toggle.on .menu-toggle-hamburger {
+                border-color: #FFFFFF;
+            }
+            
+            .menu-toggle:hover .menu-toggle-hamburger:before,
+            .menu-toggle.on .menu-toggle-hamburger:before,
+            .menu-toggle:hover .menu-toggle-hamburger:after,
+            .menu-toggle.on .menu-toggle-hamburger:after {
+                background: #FFFFFF;
+            }
+            
+            .header-container,
+            .header-container .social-links li a {
+                color: #FFFFFF!important;
+            }
+            
+            a.read_more,
+            .wrapper-dropdown-3.nav .dropdown li:hover a,
+            .wrapper-dropdown-3.share .dropdown li:hover a {
+                background: #97d5e0;
+            }
+
+            .wrapper-dropdown-3.share .dropdown li:last-child a:hover:after,
+            .wrapper-dropdown-3.nav .dropdown li:first-child:hover:after {
+                border-color: #97d5e0 transparent;
+                z-index: 1;
+            }
+            
+            .link-wrapper h1 a,
+            .link-wrapper .link-title:after {
+                background-color: #97d5e0;
+            }
+
+            /* Custom CSS */
+            
+        </style>
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
 
 <nav class="dd wrapper-dropdown-3 nav" tabindex="1">
 
@@ -187,13 +255,10 @@
 </div>
 
 <!-- Footer -->
-<footer class="w3-container w3 w3-center w3-margin-top" style="background-color:blue; color: white">
+<footer class="w3-container w3 w3-center w3-margin-top" style="background-color:white; color: white">
   <p>Find me on GitHub or LinkedIn.</p>
-  <!-- TODO: Add in your own socials! You can include more social media by checking out font awesome icons online! -->
-  <a href="https://github.com/arehill"><i class="fa fa-github w3-hover-opacity" style="font-size:24px; padding-right: 0.5%"></i>
-  <a href="https://www.linkedin.com/in/anne-rehill"><i class="fa fa-linkedin w3-hover-opacity" style="font-size:24px; padding-bottom:2%"></i>
-  <!--<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>-->
+    <a href="https://github.com/arehill" class="fa fa-github"></a>
+    <a href="https://www.linkedin.com/in/anne-rehill" class="fa fa-linkedin"></a>
 </footer>
-<!-- End Footer -->
 </body>
 </html>
