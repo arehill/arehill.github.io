@@ -11,16 +11,17 @@
         <link rel="stylesheet" href="https://static.tumblr.com/wdg4six/QZzn5azvd/kznrmur-icons.css">
         <link rel="stylesheet" href="https://static.tumblr.com/wdg4six/4aLn5z4sj/superstudio-main.css">
         <link rel="stylesheet" href="https://static.tumblr.com/wofln30/FGGmyt1xp/colorbox.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
         
         <style>
             
             body {
-                background-color: #f7f7f7;
+                background-color: #FFFFFF;
+                padding: 10px;
             }
             
             a {
-                color: #b0cce4;
+                color: #3473aa;
             }
 
             .fa-github {
@@ -38,53 +39,25 @@
                 font-weight: bold;
             }
             
-            
-            .menu-toggle:hover .menu-toggle-hamburger,
-            .menu-toggle.on .menu-toggle-hamburger {
-                border-color: #FFFFFF;
+            .topnav {
+              background-color: #333;
+              overflow: hidden;
             }
-            
-            .menu-toggle:hover .menu-toggle-hamburger:before,
-            .menu-toggle.on .menu-toggle-hamburger:before,
-            .menu-toggle:hover .menu-toggle-hamburger:after,
-            .menu-toggle.on .menu-toggle-hamburger:after {
-                background: #FFFFFF;
+
+/* Style the links inside the navigation bar */
+            .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 14px;
             }
-            
-            .header-container,
-            .header-container .social-links li a {
-                color: #FFFFFF!important;
-            }
-            
+
             footer {
               background-color: #FFFFFF;
               text-align: center;
               padding: 10px;
-            }
-
-            .topnav {
-              overflow: hidden;
-              background-color: #FFFFFF;
-              position: relative;
-            }
-            .topnav #myLinks {
-              display: none;
-            }
-
-          .topnav a {
-              color: white;
-              padding: 14px 16px;
-              text-decoration: none;
-              font-size: 14px;
-              display: block;
-            }
-
-            .topnav a.icon {
-              background: white;
-              display: block;
-              position: absolute;
-              right: 0;
-              top: 0;
             }
             /* Custom CSS */
             
@@ -93,15 +66,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <div class="topnav">
-  <a href="#home" class="active">Logo</a>
-  <div id="myLinks">
-    <a href="index.html">Home</a>
-    <a href="personal.html">Projects</a>
-  </div>
-  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
+  <a class="active" href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
 </div>
 
   <!-- The Grid -->
