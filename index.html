@@ -38,20 +38,6 @@
                 font-weight: bold;
             }
             
-            .menu-toggle .menu-toggle-hamburger {
-                border-color: #FFFFFF;
-            }
-            
-            .menu-toggle .menu-toggle-hamburger:before,
-            .menu-toggle .menu-toggle-hamburger:after {
-                background: #FFFFFF;
-            }
-            
-            .menu-toggle:hover,
-            .menu-toggle.on {
-                background: #FFFFFF;
-                color: #FFFFFF;
-            }
             
             .menu-toggle:hover .menu-toggle-hamburger,
             .menu-toggle.on .menu-toggle-hamburger {
@@ -70,37 +56,35 @@
                 color: #FFFFFF!important;
             }
             
-            a.read_more,
-            .wrapper-dropdown-3.nav .dropdown li:hover a,
-            .wrapper-dropdown-3.share .dropdown li:hover a {
-                background: #97d5e0;
-            }
-
-            .wrapper-dropdown-3.share .dropdown li:last-child a:hover:after,
-            .wrapper-dropdown-3.nav .dropdown li:first-child:hover:after {
-                border-color: #97d5e0 transparent;
-                z-index: 1;
-            }
-            
-            .link-wrapper h1 a,
-            .link-wrapper .link-title:after {
-                background-color: #97d5e0;
-            }
-            {
-                box-sizing: border-box;
-            }
-            .left {
-              width: 40%;
-              float: left;
-            }
-            .right {
-              width: 60%;
-              float: left;
-            }
             footer {
               background-color: #FFFFFF;
               text-align: center;
               padding: 10px;
+            }
+
+            .topnav {
+              overflow: hidden;
+              background-color: #FFFFFF;
+              position: relative;
+            }
+            .topnav #myLinks {
+              display: none;
+            }
+
+          .topnav a {
+              color: white;
+              padding: 14px 16px;
+              text-decoration: none;
+              font-size: 14px;
+              display: block;
+            }
+
+            .topnav a.icon {
+              background: white;
+              display: block;
+              position: absolute;
+              right: 0;
+              top: 0;
             }
             /* Custom CSS */
             
@@ -108,32 +92,21 @@
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<nav class="dd wrapper-dropdown-3 nav" tabindex="1">
-
-            <div class="menu-toggle">
-            <span class="menu-toggle-hamburger"></span>
-            </div>
-                
-            <ul class="dropdown" id="dropdown">
-
-                    
-                    <li>
-                        <a href="index.html" class="page">Home</a>
-                    </li>
-                    
-                
-                <li>
-                    <a href="personal.html">Projects</a>
-                </li>
-                
-            </ul>
-</nav>
+<div class="topnav">
+  <a href="#home" class="active">Logo</a>
+  <div id="myLinks">
+    <a href="index.html">Home</a>
+    <a href="personal.html">Projects</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
   <!-- The Grid -->
   <div class="w3-row-padding">
 
-    <!-- Left Column -->
-    <div class="left">
 
       <!--Start personal information section -->
       <div class="w3-white w3-text-black w3-card-4">
@@ -185,12 +158,11 @@
           <p class="w3-large w3-text-theme"><b>Awards:</b></p>          <ul>
             <li>AP Scholar with Distinction</li>
             <li>National Merit Commended Scholar</li>
+            <li>University of Michigan University Honors, Fall 2020 semester</li>
+            <li>Georgetown Visitation First Honors by semester, 2016-2020</li>
+            <li>Georgetown Visitation 1799 Scholar</li>
         </div>
       </div><br>
-    </div>
-
-    <!-- Right Column -->
-    <div class="right">
 
   <!-- Start Work Experience section --> 
       <div class="w3-container w3-card w3-white w3-margin-bottom">
@@ -261,7 +233,6 @@
     <!-- End Education section --> 
       </div>
     <!-- End Right Column -->
-    </div>
 
   <!-- End Grid -->
   </div>
