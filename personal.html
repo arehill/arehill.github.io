@@ -64,31 +64,19 @@
                 color: #000000;
             }
 
-            .menu-toggle .menu-toggle-hamburger {
-                border-color: #FFFFFF;
+            .topnav {
+              background-color: #FFFFFF;
+              overflow: hidden;
             }
-            
-            .menu-toggle .menu-toggle-hamburger:before,
-            .menu-toggle .menu-toggle-hamburger:after {
-                background: #FFFFFF;
-            }
-            
-            .menu-toggle:hover,
-            .menu-toggle.on {
-                background: #FFFFFF;
-                color: #3473aa;
-            }
-            
-            .menu-toggle:hover .menu-toggle-hamburger,
-            .menu-toggle.on .menu-toggle-hamburger {
-                border-color: #FFFFFF;
-            }
-            
-            .menu-toggle:hover .menu-toggle-hamburger:before,
-            .menu-toggle.on .menu-toggle-hamburger:before,
-            .menu-toggle:hover .menu-toggle-hamburger:after,
-            .menu-toggle.on .menu-toggle-hamburger:after {
-                background: #FFFFFF;
+
+/* Style the links inside the navigation bar */
+            .topnav a {
+            float: left;
+            color: #3473aa;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 14px;
             }
             
             .header-container,
@@ -100,12 +88,6 @@
             .wrapper-dropdown-3.nav .dropdown li:hover a,
             .wrapper-dropdown-3.share .dropdown li:hover a {
                 background: #ffffff;
-            }
-
-            .wrapper-dropdown-3.share .dropdown li:last-child a:hover:after,
-            .wrapper-dropdown-3.nav .dropdown li:first-child:hover:after {
-                border-color: #ffffff transparent;
-                z-index: 1;
             }
             
             .link-wrapper h1 a,
@@ -130,26 +112,10 @@
    </head>
     <body class="">
         
-<nav class="dd wrapper-dropdown-3 nav" tabindex="1">
-
-            <div class="menu-toggle">
-            <span class="menu-toggle-hamburger"></span>
-            </div>
-                
-            <ul class="dropdown" id="dropdown">
-
-                    
-                    <li>
-                        <a href="index.html" class="page">Home</a>
-                    </li>
-                    
-                
-                <li>
-                    <a href="personal.html">Projects</a>
-                </li>
-                
-            </ul>
-</nav>
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="personal.html">Projects</a>
+</div>
             
         <div class="header-container">
             <header class="wrapper clearfix">
