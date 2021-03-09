@@ -42,14 +42,11 @@
                 font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif, Helvetica Neue, Helvetica, Arial, sans-serif;
                 font-size: 20;
             }
-
-            .fa-instagram {
-                padding: 20px;
-                font-size: 30px;
-                width: 25px;
-                text-align: center;
-                color: #475e99;
-                background: #FFFFFF;
+            .hero-text {
+              text-align: center;
+              position: absolute;
+              top: 30%;
+              left: 50%;
             }
             
             .topnav {
@@ -89,58 +86,17 @@
   <a href="education-work-experience.html">Education and Work Experience</a>
   <a href="art-portfolio.html">Art Portfolio</a>
 </div>
-
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-    <div class="w3-row-padding">
-
-      <!--Start personal information section -->
-      <div class="w3-white w3-text-black w3-card-4">
-        <div class="w3-display-container">
-          <div class="w3-display-bottomleft w3-container w3-text-black">
-          </div>
-        </div>
-        <!--TODO: Change your information-->
-        <h2 style="margin-left: 0%"><strong>Anne Rehill</strong> </h2>
-        <div class="w3-container">
-          <p><a href="mailto:arehill@umich.edu">arehill@umich.edu</a></p>
-          <hr>
-       <!--End personal information section -->       
-      <div class="column">
-      <!-- Start About Me section -->
-          <p class="w3-large"><b>About me:</b></p>
-          <!-- TODO: Change these paragraphs to be about you -->
-          <p>My name is Anne, and I am a freshman at the University of Michigan. </p>
-          <p>My first experience with programming has been this past semester, Fall 2020, in my school's introductory computer science course, EECS 183, that focuses on C++ and python. Through this website, I have been hoping to build my skills with HTML and CSS. I am also interested in exploring the world of information science and its applications to human experiences, such as in social media or health. Please take a look at some of my coding projects below or my github linked at the bottom of the page!</p>
-          <hr>
-      <!-- End About Me section -->
-
-
-      <!-- Start Skills section -->
-          <p class="w3-large w3-text-theme"><b>Skills I am Developing:</b></p>
-          <!-- TODO: change these skills to your skills -->
-          <ul>
-            <li>C++</li>
-            <li>Python</li>
-            <li>JavaScript</li>
-            <li>HTML</li>
-            <li>CSS</li>
-          </ul>
-      <!-- End Skills section -->
-
-      <!-- Start Hobbies section -->
-          <p class="w3-large w3-text-theme"><b>My hobbies:</b></p>
-          <ul>
-            <li>Walking my dog, Ovie!</li>
-            <li>Cooking and running a food instagram! <a href="https://www.instagram.com/anniie_eats_/" class="fa fa-instagram"></a></li>
-            <li>Playing the guitar, piano, and saxophone</li>
-            <li>Painting with acrylics and watercolors.</li>
-          </ul>
-      <!-- End Hobbies section -->
-          
-
-      <!-- Start Awards section -->          
-          <hr>
+    <div class="header-container">
+    <header class="wrapper clearfix">
+      <div class="hero-text">
+        <h1><strong>Anne Rehill</strong> </h1>
+        <p><a href="mailto:arehill@umich.edu">arehill@umich.edu</a></p>
+      </div>
+    </header>
+  </div>
+<div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="anne-rehill"><a class="LI-simple-link" href='https://www.linkedin.com/in/anne-rehill?trk=profile-badge'>Anne Rehill</a></div>
+<div class="row">
+  <div class="column">
           <p class="w3-large w3-text-theme"><b>Awards:</b></p>
           <ul>
             <li>AP Scholar with Distinction</li>
@@ -150,16 +106,8 @@
             <li>Georgetown Visitation 1799 Scholar</li>
             <li>National Spanish Exam Silver Medal in 2018 and 2019</li>
           </ul>
-                  <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="anne-rehill"><a class="LI-simple-link" href='https://www.linkedin.com/in/anne-rehill?trk=profile-badge'>Anne R.</a></div>
-        </div>
-      </div><br>
-      </div>
-      <div class="column">
-  <!-- Start Work Experience section --> 
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
+
         <h2 class="w3-text-black w3-padding-16">Work Experience</h2>
-        <!--TODO: Edit w3-container divs below to have your job info -->
-        <div class="w3-container">
           <h5 class="w3-text"><b>Head Lifeguard at Donaldson Run Rec. Assoc.</b></h5>
           <h5 class="w3-text"><b>May 2018 - Current</b></h5>
           <p>Responsibilities:</p>
@@ -169,20 +117,12 @@
             <li>Certification in CPR, AED, first aid, and emergency water rescues</li>
           </ul>
           <hr>
-        </div>
-        <!--To add another job, just create another div section! -->
-      </div>
-  <!-- End Work Experience section --> 
-
-   
-   <!-- Start Education section --> 
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-black w3-padding-16">Education</h2>
-        <div class="w3-container">
-          <!-- TODO: add in your own educational experiences --> 
-          <h5 class="w3-text"><b>University of Michigan, Ann Arbor, MI</b></h5>
-          <h5 class="w3-text"><b>September 2020 - Expected Graduation May 2024</b></h5>
-          <p>Relevant coursework:</p>
+  </div>
+  <div class="column">
+    <h2 class="w3-text-black w3-padding-16">Education</h2>
+      <h5 class="w3-text"><b>University of Michigan, Ann Arbor, MI</b></h5>
+      <h5 class="w3-text"><b>September 2020 - Expected Graduation May 2024</b></h5>
+        <p>Relevant coursework:</p>
           <ul>
             <li>EECS 183: Elementary Programming Concepts</li>
             <li>MATH 115: Calculus 1</li>
@@ -193,7 +133,7 @@
             <li>SOC 100: Introduction to Sociology</li>
             <li>Spanish 277: Grammar and Composition</li>
           </ul>
-          <p>Academic and Social extracurriculars:</p>
+        <p>Academic and Social extracurriculars:</p>
           <ul>
             <li><a href="http://www.oneteamcoding.com">One Team Coding</a> since Winter 2021 semester.</li>
             <li><a href="http://umich.alphadeltapi.org/philanthropy/">Alpha Delta Pi</a>, Beta Eta Chapter.</li>
@@ -206,8 +146,6 @@
             <li>Elevator Simulator</li>
             <li>TutorMe project as part of One Team Coding</li>
           <hr>
-        </div>
-        <div class="w3-container">
           <h5 class="w3-text"><b>Georgetown Visitation Preparatory School, Washington D.C.</b></h5>
           <h5 class="w3-text"><b>September 2016 - June 2020</b></h5>
           <p>Relevant coursework:</p>
@@ -223,18 +161,8 @@
             <li>Speech</li>
           </ul>
         </div>
-      </div>
-    <!-- End Education section --> 
-      </div>
-    <!-- End Right Column -->
-  </div>
-  <!-- End Grid -->
-  </div>
-
-  <!-- End Page Container -->
 </div>
 
-<!-- Footer -->
 <footer class="footer">
   <p>Find me on <a href="https://github.com/arehill">GitHub</a> or <a href="https://www.linkedin.com/in/anne-rehill">LinkedIn</a>.</p>
 </footer>
