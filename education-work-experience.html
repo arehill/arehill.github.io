@@ -62,61 +62,59 @@
               padding: 10px;
             }
             
-            .menu-toggle .menu-toggle-hamburger {
-              border-color: black;
+            #hamnav {
+              width: 100%;
+              background: #000;
+              position: sticky;
+              top: 0;
             }
 
-            .menu-toggle .menu-toggle-hamburger:before,
-            .menu-toggle .menu-toggle-hamburger:after {
-              background: #f7f7f7;
+            #hamitems { display: flex; }
+            #hamitems a {
+              width: 25%;
+              padding: 10px;
+              color: black;
+              text-decoration: none;
+              text-align: center;
+            }
+            #hamitems a:hover {
+              background: #401408;
             }
 
-            .menu-toggle:hover,
-            .menu-toggle.on {
-              background: #f7f7f7;
-              color: #black;
+            @media screen and (max-width: 768px){
+              #hamnav label {
+                display: inline-block;
+                color: white;
+                background: #a02620;
+                font-style: normal;
+                font-size: 1.2em;
+                padding: 10px;
+              }
+              #hamitems a {
+                box-sizing: border-box;
+                display: block;
+                width: 100%;
+                border-top: 1px solid #333;
+              }
+              #hamitems { display: none; }
+              #hamnav input:checked ~ #hamitems { display: block; }
             }
 
-            .menu-toggle:hover .menu-toggle-hamburger,
-            .menu-toggle.on .menu-toggle-hamburger {
-              border-color: #black;
-            }
-
-            .menu-toggle:hover .menu-toggle-hamburger:before,
-            .menu-toggle.on .menu-toggle-hamburger:before,
-            .menu-toggle:hover .menu-toggle-hamburger:after,
-            .menu-toggle.on .menu-toggle-hamburger:after {
-              background: #f7f7f7;
-            }
-
-            a.read_more,
-            .wrapper-dropdown-3.nav .dropdown li:hover a,
-            .wrapper-dropdown-3.share .dropdown li:hover a {
-                background: #97d5e0;
-            }
-
-            .wrapper-dropdown-3.share .dropdown li:last-child a:hover:after,
-            .wrapper-dropdown-3.nav .dropdown li:first-child:hover:after {
-                border-color: #97d5e0 transparent;
-                z-index: 1;
-            }
 
         </style>
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <body>
   
-  <nav class="dd wrapper-dropdown-3 nav" tabindex="1">
-  <div class="menu-toggle">
-    <span class="menu-toggle-hamburger">
-    </span>
+<nav id="hamnav">
+  <label for="hamburger">&#9776;</label>
+  <input type="checkbox" id="hamburger"/>
+  <div id="hamitems">
+    <a href="index.html">About Me</a>
+    <a href="personal.html">Coding Projects</a>
+    <a href="education-work-experience.html">Education and Work Experience</a>
+    <a href="art-portfolio.html">Art Portfolio</a>
   </div>
-  <ul class="dropdown" id="dropdown">
-    <li><a class="active" href="index.html">About Me</a></li>
-    <li><a href="personal.html">Coding Projects</a></li>
-    <li><a href="education-work-experience.html">Education and Work Experience</a></li>
-    <li><a href="art-portfolio.html">Art Portfolio</a></li>
-  </ul>
 </nav>
 
   <div class="header-container">
