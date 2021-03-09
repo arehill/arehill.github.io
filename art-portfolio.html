@@ -30,6 +30,23 @@
                 color: #000000;
             }
 
+            .hero-image {
+              background-image: url("project-background.jpg");
+              height: 50%;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              position: relative;
+            }
+            .hero-text {
+              text-align: center;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              color: white;
+            }
+
             .topnav {
               background-color: #FFFFFF;
               overflow: hidden;
@@ -83,14 +100,17 @@
   <a href="art-portfolio.html">Art Portfolio</a>
 </div>
 <body>
-	<div class="header-container">
-    	<header class="wrapper clearfix">
-			<h1>Project Portfolio</h1>
-			<span class="description">
-                    <p>Collection of my Art Projects (Under construction)</p>
-            </span>
-        </header>
-    </div>
+<div class="header-container">
+<header class="wrapper clearfix">
+  <div class="hero-image">
+  <div class="hero-text">
+    <h1>Art Portfolio</h1>
+    <p>Check out some of my art designs below!</p>
+  </div>
+</div>
+</header>
+</div>
+
 <div class="row"> 
   <div class="column">
     <img src="icon.png">
