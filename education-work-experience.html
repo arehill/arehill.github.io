@@ -17,7 +17,7 @@
         <style>
             
             body {
-                background-color: #FFFFFF;
+                background-color: #f7f7f7;
                 padding: 14px;
                 text-align: center;
                 color: black;
@@ -70,6 +70,45 @@
               padding: 10px;
             }
             
+            .menu-toggle .menu-toggle-hamburger {
+              border-color: #FFFFFF;
+            }
+
+            .menu-toggle .menu-toggle-hamburger:before,
+            .menu-toggle .menu-toggle-hamburger:after {
+              background: #FFFFFF;
+            }
+
+            .menu-toggle:hover,
+            .menu-toggle.on {
+              background: #FFFFFF;
+              color: #FFFFFF;
+            }
+
+            .menu-toggle:hover .menu-toggle-hamburger,
+            .menu-toggle.on .menu-toggle-hamburger {
+              border-color: #FFFFFF;
+            }
+
+            .menu-toggle:hover .menu-toggle-hamburger:before,
+            .menu-toggle.on .menu-toggle-hamburger:before,
+            .menu-toggle:hover .menu-toggle-hamburger:after,
+            .menu-toggle.on .menu-toggle-hamburger:after {
+              background: #FFFFFF;
+            }
+
+            a.read_more,
+            .wrapper-dropdown-3.nav .dropdown li:hover a,
+            .wrapper-dropdown-3.share .dropdown li:hover a {
+                background: #97d5e0;
+            }
+
+            .wrapper-dropdown-3.share .dropdown li:last-child a:hover:after,
+            .wrapper-dropdown-3.nav .dropdown li:first-child:hover:after {
+                border-color: #97d5e0 transparent;
+                z-index: 1;
+            }
+
         </style>
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
