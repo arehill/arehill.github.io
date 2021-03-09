@@ -64,19 +64,27 @@
                 color: #000000;
             }
 
-            .topnav {
-              background-color: #FFFFFF;
-              overflow: hidden;
+            .title {
+              text-align: center;
             }
 
-/* Style the links inside the navigation bar */
-            .topnav a {
-            float: left;
-            color: #3473aa;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 14px;
+            #hamnav {
+              width: 100%;
+              background: #f7f7f7;
+              position: sticky;
+              top: 0;
+            }
+
+            #hamitems { display: flex; }
+            #hamitems a {
+              width: 25%;
+              padding: 10px;
+              color: black;
+              text-decoration: none;
+              text-align: center;
+            }
+            #hamitems a:hover {
+              background: #3473aa;
             }
             
             .header-container,
@@ -112,12 +120,14 @@
    </head>
     <body class="">
         
-<div class="topnav">
-  <a class="active" href="index.html">About Me</a>
-  <a href="personal.html">Coding Projects</a>
-  <a href="education-work-experience.html">Education and Work Experience</a>
-  <a href="art-portfolio.html">Art Portfolio</a>
-</div>
+<nav id="hamnav">
+  <div id="hamitems">
+    <a href="index.html">About Me</a>
+    <a href="personal.html">Coding Projects</a>
+    <a href="education-work-experience.html">Education and Work Experience</a>
+    <a href="art-portfolio.html">Art Portfolio</a>
+  </div>
+</nav>
             
         <div class="header-container">
             <header class="wrapper clearfix">
