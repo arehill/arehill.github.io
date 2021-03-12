@@ -19,6 +19,15 @@
             body {
                 background-color: #f7f7f7;
                 padding: 14px;
+                color: black;
+            }
+
+            .section{
+              background-color: white;
+              color: #605e5a;
+              border: 1px solid black;
+              margin: 20px;
+              padding: 20px;
             }
             
             a {
@@ -26,21 +35,26 @@
                 font-weight: bold;
             }
             
-            .header-container h1 a {
+
+            h1 {
                 font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif, Helvetica Neue, Helvetica, Arial, sans-serif;
                 font-weight: bold;
-                font-size: 24;
+                color: #000000;
+                size: 24;
             }
 
-            .header-container p {
+            p {
                 font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif, Helvetica Neue, Helvetica, Arial, sans-serif;
-                font-size: 16;
+                color: #000000;
+                size: 16;
+                font-weight: normal;
             }
 
-            .body h2 {
+            h2 {
                 font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif, Helvetica Neue, Helvetica, Arial, sans-serif;
                 font-size: 20;
             }
+
 
             .fa-instagram {
                 padding: 20px;
@@ -70,33 +84,24 @@
               background: #3473aa;
             }
 
+            .column {
+              float: left;
+              width: 50%;
+            }
+
+            .title {
+              text-align: center;
+            }
+            
             footer {
               background-color: #f7f7f7;
               text-align: center;
               padding: 10px;
             }
 
-            .title {
-              text-align: center;
+            .li-profile-badge {
+              align-content: center;
             }
-
-            .column {
-              float: left;
-              width: 50%;
-            }
-
-            .section{
-              background-color: white;
-              color: #605e5a;
-              border: 1px solid black;
-              margin: 20px;
-              padding: 20px;
-            }
-
-            .title {
-              text-align: center;
-            }
-            /* Custom CSS */
             
         </style>
 </head>
@@ -105,8 +110,8 @@
 <nav id="hamnav">
   <div id="hamitems">
     <a href="index.html">About Me</a>
-    <a href="personal.html">Coding Projects</a>
     <a href="education-work-experience.html">Education and Work Experience</a>
+    <a href="personal.html">Coding Projects</a>
     <a href="index.html">Art Portfolio</a>
   </div>
 </nav>
@@ -124,8 +129,7 @@
       </div>
 
       <div class="section">
-        <p><b>Skills I am Developing:</b></p>
-          <!-- TODO: change these skills to your skills -->
+        <h1>Skills I am Developing:</h1>
           <ul>
             <li>C++</li>
             <li>Python</li>
@@ -136,7 +140,7 @@
       </div>
 
       <div class="section">
-        <p><b>My hobbies:</b></p>
+        <h1>My hobbies</h1>
           <ul>
             <li>Walking my dog, Ovie!</li>
             <li>Cooking and running a food instagram! <a href="https://www.instagram.com/anniie_eats_/" class="fa fa-instagram"></a></li>
@@ -146,14 +150,14 @@
       </div>
 
       <div class="section">
-        <p><b>Awards:</b></p>
+        <h1>Awards</h1>
           <ul>
             <li>University of Michigan William J. Branstrom Award</li>
-            <li>AP Scholar with Distinction</li>
-            <li>National Merit Commended Scholar</li>
             <li>University of Michigan University Honors, Fall 2020 semester</li>
             <li>Georgetown Visitation First Honors by semester, 2016-2020</li>
             <li>Georgetown Visitation 1799 Scholar</li>
+            <li>AP Scholar with Distinction</li>
+            <li>National Merit Commended Scholar</li>
             <li>National Spanish Exam Silver Medal in 2018 and 2019</li>
           </ul>
         </div>
